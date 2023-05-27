@@ -95,7 +95,7 @@ body {
 }
 
 .map-section {
-  height: 60vh;
+  height: 75vh;
   position: relative;
   z-index: -1;
   overflow-x: hidden;
