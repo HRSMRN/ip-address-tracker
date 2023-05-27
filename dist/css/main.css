@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-style: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.header-section {
+  background: url("../images/pattern-bg-mobile.png") no-repeat;
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+}
+.header-section h1 {
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.header-section form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.header-section .ip-address {
+  color: hsl(0, 0%, 17%);
+  width: 70%;
+  border-radius: 10px 0px 0px 10px;
+  padding: 0px 20px;
+  height: 50px;
+}
+.header-section .search-btn {
+  height: 50px;
+  border-radius: 0px 10px 10px 0px;
+  width: 15%;
+  background-color: black;
+}
+
+.mid-section {
+  display: flex;
+  justify-content: center;
+  transform: translate(0, -50%);
+  position: relative;
+  z-index: 1;
+}
+.mid-section .container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+  padding-top: 20px;
+}
+.mid-section .container h2 {
+  margin-bottom: 10px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 59%);
+  font-weight: 500;
+}
+.mid-section .container span {
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 17%);
+  font-weight: 700;
+}
+
+.map-section {
+  height: 80vh;
+  transform: translate(0, -50%);
+  background-color: aquamarine;
+}
+
+#map {
+  height: inherit;
+}
