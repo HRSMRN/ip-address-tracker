@@ -16,74 +16,89 @@ body {
 .header-section {
   background: url("../images/pattern-bg-mobile.png") no-repeat;
   background-size: cover;
-  height: 40vh;
+  height: 25vh;
+}
+
+.mid-section {
+  position: absolute;
+  top: 5vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.mid-section .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mid-section .container .form-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   padding-top: 40px;
-}
-.header-section h1 {
+  width: inherit;
   margin-bottom: 20px;
+}
+.mid-section .container .form-wrapper h1 {
+  margin-bottom: 40px;
   color: white;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 2.5rem;
 }
-.header-section form {
-  width: 100%;
+.mid-section .container .form-wrapper form {
+  width: inherit;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
 }
-.header-section .ip-address {
+.mid-section .container .form-wrapper .ip-address {
   color: hsl(0, 0%, 17%);
-  width: 70%;
+  width: 40%;
   border-radius: 10px 0px 0px 10px;
   padding: 0px 20px;
   height: 50px;
+  font-size: inherit;
 }
-.header-section .search-btn {
+.mid-section .container .form-wrapper .search-btn {
   height: 50px;
   border-radius: 0px 10px 10px 0px;
-  width: 15%;
+  width: 5%;
   background-color: black;
 }
-
-.mid-section {
-  display: flex;
-  justify-content: center;
-  transform: translate(0, -50%);
-  position: relative;
-  z-index: 1;
-}
-.mid-section .container {
+.mid-section .container .card-wrapper {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 45%;
   border-radius: 10px;
   text-align: center;
   background-color: white;
   padding-top: 20px;
 }
-.mid-section .container h2 {
-  margin-bottom: 10px;
+.mid-section .container .card-wrapper h2 {
+  margin-bottom: 20px;
   font-size: 0.75rem;
   text-transform: uppercase;
   color: hsl(0, 0%, 59%);
   font-weight: 500;
+  font-size: 1.5rem;
 }
-.mid-section .container span {
+.mid-section .container .card-wrapper span {
   margin-bottom: 20px;
   color: hsl(0, 0%, 17%);
   font-weight: 700;
+  font-size: 2rem;
 }
 
 .map-section {
-  height: 80vh;
-  transform: translate(0, -50%);
-  background-color: aquamarine;
+  height: 60vh;
+  position: relative;
+  z-index: -1;
+  overflow-x: hidden;
 }
 
 #map {
