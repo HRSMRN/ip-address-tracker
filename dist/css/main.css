@@ -25,6 +25,7 @@ body {
   z-index: -1;
   overflow-x: hidden;
 }
+
 .map-section #map {
   height: inherit;
 }
@@ -37,12 +38,14 @@ body {
   justify-content: center;
   width: 100%;
 }
+
 .card-section .container {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .card-section .container .form-wrapper {
   display: flex;
   flex-direction: column;
@@ -52,12 +55,14 @@ body {
   width: inherit;
   margin-bottom: 20px;
 }
+
 .card-section .container .form-wrapper h1 {
   margin-bottom: 40px;
   color: white;
   font-weight: 500;
   font-size: 2.5em;
 }
+
 .card-section .container .form-wrapper form {
   width: inherit;
   display: flex;
@@ -66,6 +71,7 @@ body {
   justify-content: center;
   margin-bottom: 20px;
 }
+
 .card-section .container .form-wrapper .search-bar {
   color: hsl(0, 0%, 17%);
   width: 40%;
@@ -74,6 +80,7 @@ body {
   height: 50px;
   font-size: 1.25em;
 }
+
 .card-section .container .form-wrapper .search-btn {
   height: 50px;
   border-radius: 0px 10px 10px 0px;
@@ -81,6 +88,7 @@ body {
   background-color: black;
   outline: none;
 }
+
 .card-section .container .card-options {
   list-style: none;
   display: flex;
@@ -91,15 +99,18 @@ body {
   background-color: white;
   padding-top: 20px;
 }
+
 .card-section .container .card-options .card-item {
   margin-bottom: 30px;
 }
+
 .card-section .container .card-options h2 {
   text-transform: uppercase;
   color: hsl(0, 0%, 59%);
   font-weight: 500;
   font-size: 1em;
 }
+
 .card-section .container .card-options span {
   color: hsl(0, 0%, 17%);
   font-weight: 700;
@@ -110,34 +121,43 @@ body {
   .header-section {
     height: 20vh;
   }
+
   .map-section {
     height: 80vh;
   }
+
   .card-section {
     top: 0;
   }
+
   .card-section .container .form-wrapper {
     padding-top: 20px;
   }
+
   .card-section .container .form-wrapper h1 {
     margin-bottom: 20px;
   }
+
   .card-section .container .form-wrapper .search-bar {
     height: 40px;
     width: 56%;
     font-size: 0.75em;
   }
+
   .card-section .container .form-wrapper .search-bar:hover {
     cursor: pointer;
   }
+
   .card-section .container .form-wrapper .search-btn {
     height: 40px;
     width: 4%;
   }
+
   .card-section .container .form-wrapper .search-btn:hover {
     background-color: hsl(0, 0%, 17%);
     cursor: pointer;
   }
+
   .card-section .container .card-options {
     width: 75%;
     flex-direction: row;
@@ -145,30 +165,38 @@ body {
     justify-content: space-between;
     text-align: left;
   }
+
   .card-section .container .card-options .card-item {
     margin-bottom: 0px;
   }
+
   .card-section .container .card-options .card-item h2 {
     font-size: 0.5em;
     margin-bottom: 10px;
   }
+
   .card-section .container .card-options .card-item span {
     font-size: 1em;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .header-section {
     height: 30vh;
   }
+
   .map-section {
     height: 70vh;
   }
+
   .card-section .container .form-wrapper .search-bar {
     width: 36%;
   }
+
   .card-section .container .form-wrapper .search-btn {
     width: 4%;
   }
+
   .card-section .container .card-options {
     width: 60%;
     align-items: center;
