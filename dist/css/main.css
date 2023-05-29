@@ -19,7 +19,17 @@ body {
   height: 25vh;
 }
 
-.mid-section {
+.map-section {
+  height: 75vh;
+  position: relative;
+  z-index: -1;
+  overflow-x: hidden;
+}
+.map-section #map {
+  height: inherit;
+}
+
+.card-section {
   position: absolute;
   top: 5vh;
   z-index: 1;
@@ -27,13 +37,13 @@ body {
   justify-content: center;
   width: 100%;
 }
-.mid-section .container {
+.card-section .container {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.mid-section .container .form-wrapper {
+.card-section .container .form-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,13 +52,13 @@ body {
   width: inherit;
   margin-bottom: 20px;
 }
-.mid-section .container .form-wrapper h1 {
+.card-section .container .form-wrapper h1 {
   margin-bottom: 40px;
   color: white;
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
-.mid-section .container .form-wrapper form {
+.card-section .container .form-wrapper form {
   width: inherit;
   display: flex;
   flex-direction: row;
@@ -56,21 +66,23 @@ body {
   justify-content: center;
   margin-bottom: 20px;
 }
-.mid-section .container .form-wrapper .ip-address {
+.card-section .container .form-wrapper .search-bar {
   color: hsl(0, 0%, 17%);
   width: 40%;
   border-radius: 10px 0px 0px 10px;
   padding: 0px 20px;
   height: 50px;
-  font-size: inherit;
+  font-size: 1.25em;
 }
-.mid-section .container .form-wrapper .search-btn {
+.card-section .container .form-wrapper .search-btn {
   height: 50px;
   border-radius: 0px 10px 10px 0px;
   width: 5%;
   background-color: black;
+  outline: none;
 }
-.mid-section .container .card-wrapper {
+.card-section .container .card-options {
+  list-style: none;
   display: flex;
   flex-direction: column;
   width: 45%;
@@ -79,28 +91,87 @@ body {
   background-color: white;
   padding-top: 20px;
 }
-.mid-section .container .card-wrapper h2 {
-  margin-bottom: 20px;
-  font-size: 0.75rem;
+.card-section .container .card-options .card-item {
+  margin-bottom: 30px;
+}
+.card-section .container .card-options h2 {
   text-transform: uppercase;
   color: hsl(0, 0%, 59%);
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1em;
 }
-.mid-section .container .card-wrapper span {
-  margin-bottom: 20px;
+.card-section .container .card-options span {
   color: hsl(0, 0%, 17%);
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5em;
 }
 
-.map-section {
-  height: 75vh;
-  position: relative;
-  z-index: -1;
-  overflow-x: hidden;
+@media screen and (min-width: 1024px) {
+  .header-section {
+    height: 20vh;
+  }
+  .map-section {
+    height: 80vh;
+  }
+  .card-section {
+    top: 0;
+  }
+  .card-section .container .form-wrapper {
+    padding-top: 20px;
+  }
+  .card-section .container .form-wrapper h1 {
+    margin-bottom: 20px;
+  }
+  .card-section .container .form-wrapper .search-bar {
+    height: 40px;
+    width: 56%;
+    font-size: 0.75em;
+  }
+  .card-section .container .form-wrapper .search-bar:hover {
+    cursor: pointer;
+  }
+  .card-section .container .form-wrapper .search-btn {
+    height: 40px;
+    width: 4%;
+  }
+  .card-section .container .form-wrapper .search-btn:hover {
+    background-color: hsl(0, 0%, 17%);
+    cursor: pointer;
+  }
+  .card-section .container .card-options {
+    width: 75%;
+    flex-direction: row;
+    padding: 10px 20px 30px 20px;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .card-section .container .card-options .card-item {
+    margin-bottom: 0px;
+  }
+  .card-section .container .card-options .card-item h2 {
+    font-size: 0.5em;
+    margin-bottom: 10px;
+  }
+  .card-section .container .card-options .card-item span {
+    font-size: 1em;
+  }
 }
-
-#map {
-  height: inherit;
+@media screen and (min-width: 1440px) {
+  .header-section {
+    height: 30vh;
+  }
+  .map-section {
+    height: 70vh;
+  }
+  .card-section .container .form-wrapper .search-bar {
+    width: 36%;
+  }
+  .card-section .container .form-wrapper .search-btn {
+    width: 4%;
+  }
+  .card-section .container .card-options {
+    width: 60%;
+    align-items: center;
+    height: 150px;
+  }
 }

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
 
   <!-- Leaflet CSS File -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -30,52 +30,46 @@
     <div id="map"></div>
   </div>
 
-  <div class="mid-section">
+  <div class="card-section">
 
     <div class="container">
       <div class="form-wrapper">
         <h1> IP Address Tracker</h1>
-        <form action="" method="post">
+        <form action=" name=" ip-form">
 
-          <input type="text" class="ip-address" placeholder="Search for any address or domain">
+          <input type="text" class="search-bar" placeholder="Search for any address or domain">
           <button class="search-btn">
             <img src="./dist/images/icon-arrow.svg" alt="">
           </button>
         </form>
       </div>
 
-      <div class="card-wrapper">
-        <h2 class="ip-address">IP Address</h2>
-        <span class="ip-address-field">192.212.174.101</span>
-
-        <h2 class="location">Location</h2>
-        <span class="location-field">Brooklyn, NY 10001</span>
-
-        <h2 class="timezone">Timezone</h2>
-        <span class="timezone-field">UTC -05:00</span>
-
-        <h2 class="isp">ISP</h2>
-        <span class="isp-field">SpaceX Starlink</span>
-
-      </div>
+      <ul class="card-options">
+        <li class="card-item">
+          <h2 class="ip-address">IP Address</h2>
+          <span class="ip-address-field">192.212.174.101</span>
+        </li>
+        <li class="card-item">
+          <h2 class="location">Location</h2>
+          <span class="location-field">Brooklyn, NY 10001</span>
+        </li>
+        <li class="card-item">
+          <h2 class="timezone">Timezone</h2>
+          <span class="timezone-field">UTC -05:00</span>
+        </li>
+        <li class="card-item">
+          <h2 class="isp">ISP</h2>
+          <span class="isp-field">SpaceX Starlink</span>
+        </li>
+      </ul>
     </div>
-
-
   </div>
-
-
-
-
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>. -->
   </div>
 </body>
 
 <!-- Leaflet JS File -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script src="dist/js/main.js"></script>
+<script type="module" src="dist/js/main.js"></script>
 
 </html>
