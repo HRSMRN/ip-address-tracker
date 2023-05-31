@@ -7,7 +7,7 @@ const ipAddr = new ipAddress();
 const searchButton = document.querySelector(".search-btn");
 const searchBar = document.querySelector(".search-bar");
 
-const cardOptions = document.querySelector(".card-options");
+const cardOptions = document.querySelector(".card-wrapper");
 
 cardOptions.style.display = "none";
 
@@ -43,7 +43,7 @@ async function updateCard(json) {
 
   ispField.textContent = json.isp;
 
-  cardOptions.style.display = "flex";
+  cardOptions.style.display = "grid";
 }
 
 // Update the map using the lat and long co-ordinates
