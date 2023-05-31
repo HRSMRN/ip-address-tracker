@@ -12,7 +12,6 @@ class ipAddress {
   }
 
   validateIpAddress() {
-    console.log(this.ipAddress);
     if (
       this.ipAddress === "" ||
       this.ipAddress === null ||
