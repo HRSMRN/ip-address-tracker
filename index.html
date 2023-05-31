@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
   <!-- Leaflet CSS File -->
@@ -15,7 +16,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./dist/images/">
+  <link rel="icon" type="image/png" sizes="32x32" href="./dist/images/favicon-32x32.png">
 
   <link rel="stylesheet" href="./dist/css/main.css">
   <title>IP Address Tracker</title>
@@ -44,27 +45,29 @@
         </form>
       </div>
 
-      <ul class="card-options">
-        <li class="card-item">
-          <h2 class="ip-address">IP Address</h2>
-          <span class="ip-address-field">192.212.174.101</span>
-        </li>
-        <li class="card-item">
-          <h2 class="location">Location</h2>
-          <span class="location-field">Brooklyn, NY 10001</span>
-        </li>
-        <li class="card-item">
-          <h2 class="timezone">Timezone</h2>
-          <span class="timezone-field">UTC -05:00</span>
-        </li>
-        <li class="card-item">
-          <h2 class="isp">ISP</h2>
-          <span class="isp-field">SpaceX Starlink</span>
-        </li>
-      </ul>
+      <div class="card-wrapper">
+        <ul class="card-options">
+          <li class="card-item">
+            <h2 class="ip-address">IP Address</h2>
+            <span class="ip-address-field">192.212.174.101</span>
+          </li>
+          <li class="card-item">
+            <h2 class="location">Location</h2>
+            <span class="location-field">Brooklyn, NY 10001</span>
+          </li>
+          <li class="card-item">
+            <h2 class="timezone">Timezone</h2>
+            <span class="timezone-field">UTC -05:00</span>
+          </li>
+          <li class="card-item">
+            <h2 class="isp">ISP</h2>
+            <span class="isp-field">SpaceX Starlink</span>
+          </li>
+        </ul>
+      </div>
+
     </div>
-  </div>
-  </div>
+
 </body>
 
 <!-- Leaflet JS File -->
